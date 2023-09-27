@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Share screenshot to telegram</title>
+  <!-- Add the script tag to include watermark.min.js -->
+  <script src="watermark.min.js"></script>
+  <script src="popup.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f128;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 0px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #hiButton {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      background-color: #0bbf53;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 200px
+    }
+
+    #hiButton:hover {
+      color: #000;
+    }
+
+    #loader {
+      display: none;
+      
+    
+      font-size: 16px;
+      line-height: 28px;
+     
+      font-weight: bold;
+      text-align: center;
+      /* border-radius: 50%;
+      border: 5px solid #f3f3f3;
+      border-top-color: #3498db; */
+      /* animation: spin 1s linear infinite; */
+    }
+
+    /* @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    } */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- <h1> Share </h1> -->
+    
+    <button id="hiButton">Take & Send</button>
+    <div id="loader">Sending..</div>
+  </div>
+</body>
+</html>
